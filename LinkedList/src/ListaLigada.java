@@ -89,6 +89,30 @@ public class ListaLigada<T> {
 		}
 		System.out.println();
 	}
+	public void quitarAlInicio() {
+		if(estaVacia()) {
+			System.out.println("No puedo eliminar nada");
+		}else {
+			inicio= inicio.getSiguiente();
+		}
+	}
+	public void quitarAlFinal() {
+		if(estaVacia()) {
+			System.out.println("No puedo eliminar nada");
+		}else {
+			Nodo<T> temp= inicio;
+			if(contarElementos()==1) {
+				inicio=null;
+			}else {
+				Nodo<T> tempAnterior=null;
+				while(temp.getSiguiente()!=null) {
+					tempAnterior=temp;
+					temp= temp.getSiguiente();
+				}
+				tempAnterior.setSiguiente(null);
+			}
+		}
+	}
 	
 
 }

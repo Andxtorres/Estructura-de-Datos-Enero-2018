@@ -14,7 +14,7 @@ public class Main {
 		listaComida.insertaAlFinal(new Comida("Arroz",30));
 		listaComida.insertaAlFinal(new Comida("Papitas",30));
 		listaComida.insertaAlFinal(new Comida("Molito",30));
-		listaComida.insertaAlFinal(new Comida("Chilaquies",30));
+		listaComida.insertaAlFinal(new Comida("Chilaquiles",30));
 		listaComida.imprimir();
 		listaComida.insertarAlInicio(new Comida("Sopes",1000));
 		try {
@@ -22,6 +22,16 @@ public class Main {
 		}catch(IndiceFueraDeRangoException e) {
 			e.printStackTrace();
 		}
+		listaComida.imprimir();
+		listaComida.quitarAlFinal();
+		listaComida.imprimir();
+		listaComida.quitarAlInicio();
+		listaComida.quitarAlInicio();
+		listaComida.quitarAlInicio();
+		listaComida.quitarAlInicio();
+		listaComida.imprimir();
+		listaComida.quitarAlInicio();
+		listaComida.quitarAlInicio();
 		listaComida.imprimir();
 		
 	}
