@@ -29,7 +29,19 @@ public class Ordenamiento<T extends Comparable<T>>{
 		}
 		return list;
 	}
-	
+
+	public LinkedList<T> insertionSort(LinkedList<T> list){
+		int i=1;
+		while(i<list.contarElementos()) {
+			int j=i;
+			while(j>0&&(list.encontrarElementoEn(j-1).compareTo(list.encontrarElementoEn(j))>0)) {
+				list.intercambiar(j, j-1);
+				j--;
+			}
+			i++;
+		}
+		return list;
+	}
 	
 	
 	

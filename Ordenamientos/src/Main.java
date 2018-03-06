@@ -11,7 +11,7 @@ public class Main {
 		linkedList.intercambiar(0, 4);
 		linkedList.imprimir();
 		Ordenamiento<Integer> o= new Ordenamiento<>();
-		LinkedList<Integer> resultado=o.selectionSort(linkedList);
+		LinkedList<Integer> resultado=o.insertionSort(linkedList);
 		resultado.imprimir();
 	}
 }
