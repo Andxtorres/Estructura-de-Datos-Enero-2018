@@ -2,6 +2,7 @@
 
 public class Queue<T> {
 	private Nodo<T> inicio;
+	private Nodo<T> fin;
 	private int tamanio;
 	public Queue() {
 		inicio=null;
@@ -12,6 +13,19 @@ public class Queue<T> {
 	}
 	
 	public void enqueue(T elemento) {
+		Nodo<T> nuevo= new Nodo<>(elemento);
+
+		if(estaVacia()) {
+			inicio=nuevo;
+			fin=nuevo;
+		}else {
+			Nodo<T> temp= fin;
+			fin=nuevo;
+			temp.setSiguiente(fin);
+		}
+		tamanio++;
+		//Sin nodo final
+		/*
 		Nodo<T> nuevo= new Nodo<>(elemento);
 		if(estaVacia()) {
 			inicio=nuevo;
@@ -24,6 +38,7 @@ public class Queue<T> {
 			
 		}
 		tamanio++;
+		*/
 	}
 	
 	public T dequeue() {

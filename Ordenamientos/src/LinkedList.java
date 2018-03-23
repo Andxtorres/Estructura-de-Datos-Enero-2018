@@ -3,6 +3,13 @@ public class LinkedList<T extends Comparable<T>> {
 	
 	private Nodo<T> inicio;
 	
+	public Nodo<T> getInicio(){
+		return inicio;
+	}
+	public void setInicio(Nodo<T> inicio){
+		this.inicio=inicio;
+	}
+	 
 	public boolean estaVacia() {
 		return inicio==null;
 	}

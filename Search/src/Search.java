@@ -1,4 +1,3 @@
-
 public class Search <T extends Comparable<T>>{
 	
 	

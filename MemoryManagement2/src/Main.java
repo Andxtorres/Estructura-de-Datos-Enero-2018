@@ -11,8 +11,8 @@ public class Main {
 	public static void tricky(Animal a1, Animal a2,Animal a3) {
 		Animal temp1= a1;
 		a1=a3;
-		a3=a2;
-		a2= temp1;
+		a2=a1;
+		a3= temp1;
 		a3.name="Bird";
 		a2.name="Lion";
 		temp1.name="Tiger";

@@ -19,8 +19,6 @@ public class Main {
 		queueEnteros.enqueue(6);
 		queueEnteros.enqueue(7);
 		queueEnteros.imprimir();
-		System.out.println("Sancando elemento: "+queueEnteros.dequeue());
-		queueEnteros.imprimir();
 		
 	}
 }
